@@ -11,6 +11,15 @@
 		BE138BC32C0B7A43005A9075 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE138BC22C0B7A43005A9075 /* ContentView.swift */; };
 		BE138BC52C0B7A46005A9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE138BC42C0B7A46005A9075 /* Assets.xcassets */; };
 		BE138BC82C0B7A46005A9075 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE138BC72C0B7A46005A9075 /* Preview Assets.xcassets */; };
+		BE138BD02C0B7ACC005A9075 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE138BCF2C0B7ACC005A9075 /* loginView.swift */; };
+		BE2E478C2C0BC20200804CA7 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E478B2C0BC20100804CA7 /* AdminView.swift */; };
+		BE2E47902C0BC55700804CA7 /* AddAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E478F2C0BC55700804CA7 /* AddAdminView.swift */; };
+		BE2E47922C0BC6AC00804CA7 /* SuperAdminMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E47912C0BC6AC00804CA7 /* SuperAdminMainView.swift */; };
+		BE2E47942C0BC98500804CA7 /* API_URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E47932C0BC98500804CA7 /* API_URL.swift */; };
+		BE2E47972C0BC9C700804CA7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E47962C0BC9C700804CA7 /* DataModel.swift */; };
+		BE2E479A2C0BCA7700804CA7 /* IsValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E47992C0BCA7700804CA7 /* IsValidEmail.swift */; };
+		BE2E479F2C0BCAF700804CA7 /* APINetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E479E2C0BCAF700804CA7 /* APINetwork.swift */; };
+		BE2E47A52C0C2AC900804CA7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E47A42C0C2AC900804CA7 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		BE138BC22C0B7A43005A9075 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE138BC42C0B7A46005A9075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE138BC72C0B7A46005A9075 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE138BCF2C0B7ACC005A9075 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		BE2E478B2C0BC20100804CA7 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		BE2E478F2C0BC55700804CA7 /* AddAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdminView.swift; sourceTree = "<group>"; };
+		BE2E47912C0BC6AC00804CA7 /* SuperAdminMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAdminMainView.swift; sourceTree = "<group>"; };
+		BE2E47932C0BC98500804CA7 /* API_URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_URL.swift; sourceTree = "<group>"; };
+		BE2E47962C0BC9C700804CA7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BE2E47992C0BCA7700804CA7 /* IsValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsValidEmail.swift; sourceTree = "<group>"; };
+		BE2E479E2C0BCAF700804CA7 /* APINetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetwork.swift; sourceTree = "<group>"; };
+		BE2E47A42C0C2AC900804CA7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,14 @@
 		BE138BBF2C0B7A43005A9075 /* pustak-superAdmin */ = {
 			isa = PBXGroup;
 			children = (
+				BE2E47982C0BCA5E00804CA7 /* Helper Functions */,
+				BE2E47952C0BC9BB00804CA7 /* Data Model */,
+				BE138BCE2C0B7ABC005A9075 /* Views */,
 				BE138BC02C0B7A43005A9075 /* pustak_superAdminApp.swift */,
 				BE138BC22C0B7A43005A9075 /* ContentView.swift */,
 				BE138BC42C0B7A46005A9075 /* Assets.xcassets */,
 				BE138BC62C0B7A46005A9075 /* Preview Content */,
+				BE2E479D2C0BCAE900804CA7 /* API */,
 			);
 			path = "pustak-superAdmin";
 			sourceTree = "<group>";
@@ -65,6 +87,43 @@
 				BE138BC72C0B7A46005A9075 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE138BCE2C0B7ABC005A9075 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE138BCF2C0B7ACC005A9075 /* loginView.swift */,
+				BE2E47912C0BC6AC00804CA7 /* SuperAdminMainView.swift */,
+				BE2E478B2C0BC20100804CA7 /* AdminView.swift */,
+				BE2E478F2C0BC55700804CA7 /* AddAdminView.swift */,
+				BE2E47A42C0C2AC900804CA7 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE2E47952C0BC9BB00804CA7 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E47962C0BC9C700804CA7 /* DataModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		BE2E47982C0BCA5E00804CA7 /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E47992C0BCA7700804CA7 /* IsValidEmail.swift */,
+			);
+			path = "Helper Functions";
+			sourceTree = "<group>";
+		};
+		BE2E479D2C0BCAE900804CA7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E47932C0BC98500804CA7 /* API_URL.swift */,
+				BE2E479E2C0BCAF700804CA7 /* APINetwork.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +197,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE138BC32C0B7A43005A9075 /* ContentView.swift in Sources */,
+				BE138BD02C0B7ACC005A9075 /* loginView.swift in Sources */,
+				BE2E47902C0BC55700804CA7 /* AddAdminView.swift in Sources */,
+				BE2E479F2C0BCAF700804CA7 /* APINetwork.swift in Sources */,
+				BE2E478C2C0BC20200804CA7 /* AdminView.swift in Sources */,
 				BE138BC12C0B7A43005A9075 /* pustak_superAdminApp.swift in Sources */,
+				BE2E47972C0BC9C700804CA7 /* DataModel.swift in Sources */,
+				BE2E47922C0BC6AC00804CA7 /* SuperAdminMainView.swift in Sources */,
+				BE2E479A2C0BCA7700804CA7 /* IsValidEmail.swift in Sources */,
+				BE2E47A52C0C2AC900804CA7 /* ProfileView.swift in Sources */,
+				BE2E47942C0BC98500804CA7 /* API_URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

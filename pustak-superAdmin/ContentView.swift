@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var networkManager = AuthenticationNetwork()
+    @StateObject var createAdmin = LibraryAdminManager()
+    @EnvironmentObject var sessionManager: SessionManager
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        if(!sessionManager.isAuthenticated && sessionManager.token.isEmpty){
+                    loginView()
+                        .environmentObject(networkManager)
+                }else{
+                    SuperAdminMainView()
+                        .environmentObject(createAdmin)
+                }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
